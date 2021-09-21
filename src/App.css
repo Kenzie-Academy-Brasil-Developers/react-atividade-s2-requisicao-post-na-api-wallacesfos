@@ -1,0 +1,45 @@
+
+.App-header {
+  background-color: lightblue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+form{
+  background-color: yellow;
+  padding: 50px 10px 50px 10px;
+  border: 2px solid white;
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.labelText{
+  margin-bottom: 20px;
+}
+
+.botao{
+  width: 60%;
+}
+
+.vermelho{
+  color: red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.verde{
+  color: green;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
