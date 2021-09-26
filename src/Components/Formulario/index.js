@@ -2,6 +2,7 @@ import * as React from 'react';
 import {TextField, Button} from '@material-ui/core';
 import { useState } from 'react';
 import axios from 'axios';
+import Display from '../Display';
 
 export default function Formulario(){
 
@@ -37,11 +38,12 @@ export default function Formulario(){
                 </div>
 
                 <div className="labelText">
-                    <TextField label="Senha" color="primary" variant="outlined" onChange={(e) => setSenha(e.target.value)} />
+                    <TextField type="password" label="Senha" color="primary" variant="outlined" onChange={(e) => setSenha(e.target.value)} />
                 </div>
                 <Button type="submit" className="botao" variant="contained">Entrar</Button>
             </form>
-            {requests}
+            <Display requests={requests} Login={Login}/>
         </div>
     )
 }
+
